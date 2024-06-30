@@ -46,11 +46,11 @@ export const metadata: Metadata = {
 	}
 };
 
-export function generateViewport(): Viewport {
-	return {
-		themeColor: "black"
-	};
-}
+// export function generateViewport(): Viewport {
+// 	return {
+// 		themeColor: "black"
+// 	};
+// }
 
 const RootLayout = ({
 	children
