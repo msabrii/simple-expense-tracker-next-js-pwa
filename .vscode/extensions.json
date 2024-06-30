@@ -1,0 +1,13 @@
+{
+	"recommendations": [
+		"naumovs.color-highlight",
+		"oderwat.indent-rainbow",
+		"PKief.material-icon-theme",
+		"YoavBls.pretty-ts-errors",
+		"bradlc.vscode-tailwindcss",
+		"SonarSource.sonarlint-vscode",
+		"esbenp.prettier-vscode",
+		"dsznajder.es7-react-js-snippets",
+		"dbaeumer.vscode-eslint"
+	]
+}
