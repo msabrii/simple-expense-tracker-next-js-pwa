@@ -13,7 +13,11 @@ export async function create(task: string) {
 }
 
 export async function getAllTasks() {
-	const database = await openDB("db", 1);
+	const database = await openDB("db", 1, {
+		upgrade(db) {
+			db.createObjectStore("tasks");
+		}
+	});
 	const tasks = await database.getAll("tasks");
 
 	database.close();

@@ -53,8 +53,12 @@ const Tasks = () => {
 							className="mt-2 bg-slate-600 p-2 text-white"
 							onClick={async () => {
 								if (newTaskRef.current && newTaskRef.current.value) {
-									setTasks([newTaskRef.current.value, ...tasks]);
-									await create(newTaskRef.current.value);
+									const x = newTaskRef.current.value;
+									setTasks([x, ...tasks]);
+									await create(x);
+
+									console.log("newTaskRef.current.value", x);
+									console.log(newTaskRef);
 									newTaskRef.current.value = "";
 									setNewTask("");
 								}
